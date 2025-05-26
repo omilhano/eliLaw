@@ -8,7 +8,6 @@ ul {
 
 li {
     font-size: 1.5rem;
-    font-weight: 600;
 }
 
 .navbar {
@@ -24,4 +23,8 @@ li {
     color: #333;
     text-align: center;
     margin-bottom: 1rem;
+}
+
+#list-text{
+    font-size: 1rem;
 }
