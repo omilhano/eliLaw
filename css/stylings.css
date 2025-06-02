@@ -1,10 +1,10 @@
 /* ===== TITLE ===== */
 .title {
     font-size: 2rem;
-    font-weight: bold;
+    font-weight: 700;
     color: #333;
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 /* ===== CAROUSEL ===== */
@@ -13,7 +13,7 @@
     margin: 0 auto;
 }
 
-.carousel img {
-    /* Uncomment below if needed */
-    /* max-height: 600px; */
+.carousel-inner {
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
