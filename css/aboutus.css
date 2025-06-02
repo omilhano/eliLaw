@@ -1,4 +1,4 @@
-.title {
+/* .title {
     font-size: 2rem;
     font-weight: bold;
     color: #333;
@@ -8,4 +8,62 @@
 
 #list-text{
     font-size: 1rem;
+} */
+/* General Typography */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+#list-text {
+    margin-left: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Trust Section */
+.trust-section {
+    gap: 2rem;
+}
+
+.trust-text {
+    flex: 1;
+    min-width: 280px;
+}
+
+.trust-description,
+.trust-awards {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+}
+
+.trust-awards strong {
+    color: #1e3a8a;
+}
+
+.trust-images {
+    min-width: 150px;
+}
+
+.trust-badge {
+    max-width: 150px;
+    height: auto;
 }
