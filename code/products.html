@@ -13,20 +13,21 @@
 
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
-        <ul class="navtemp">
-            <li>
-                <a class="brand" href="index.html">ArmorDex</a>
-            </li>
-            <li>
-                <a class="about-us" href="products.html">Products</a>
-            </li>
-            <li>
-                <a class="about-us" href="aboutus.html">About us</a>
-            </li>
-            <li>
-                <a class="privacy" href="privacidade.html">Política de Privacidade</a>
-            </li>
+    <nav class="navbar position-relative">
+        <!-- Left-aligned Logo -->
+        <div class="navbar-logo position-absolute start-0 ms-3 d-flex align-items-center">
+            <a href="index.html" class="d-flex align-items-center text-decoration-none">
+                <img src="../images/logo.png" alt="ArmorDex Logo"
+                    style="height: 40px; width: auto; margin-right: 10px;">
+                <span class="brand">ArmorDex</span>
+            </a>
+        </div>
+
+        <!-- Centered Navigation -->
+        <ul class="navtemp mx-auto">
+            <li><a class="about-us" href="products.html">Productos</a></li>
+            <li><a class="about-us" href="aboutus.html">About us</a></li>
+            <li><a class="privacy" href="privacidade.html">Política de Privacidade</a></li>
         </ul>
     </nav>
 

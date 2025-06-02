@@ -13,14 +13,24 @@
 
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
-        <ul class="navtemp">
-            <li><a class="brand" href="index.html">ArmorDex</a></li>
-            <li><a class="about-us" href="products.html">Products</a></li>
+    <nav class="navbar position-relative">
+        <!-- Left-aligned Logo -->
+        <div class="navbar-logo position-absolute start-0 ms-3 d-flex align-items-center">
+            <a href="index.html" class="d-flex align-items-center text-decoration-none">
+                <img src="../images/logo.png" alt="ArmorDex Logo"
+                    style="height: 40px; width: auto; margin-right: 10px;">
+                <span class="brand">ArmorDex</span>
+            </a>
+        </div>
+
+        <!-- Centered Navigation -->
+        <ul class="navtemp mx-auto">
+            <li><a class="about-us" href="products.html">Productos</a></li>
             <li><a class="about-us" href="aboutus.html">About us</a></li>
             <li><a class="privacy" href="privacidade.html">Política de Privacidade</a></li>
         </ul>
     </nav>
+
 
     <!-- Main content -->
     <main class="container mt-5">
@@ -59,11 +69,15 @@
                     <h5 class="text-uppercase">Informações Legais</h5>
                     <ul class="list-unstyled mb-0">
                         <li><a href="cookies.html" class="text-dark text-decoration-none">Política de cookies</a></li>
-                        <li><a href="privacidade.html" class="text-dark text-decoration-none">Política de privacidade</a></li>
-                        <li><a href="termosgerais.html" class="text-dark text-decoration-none">Condições e Termos Gerais de Venda</a></li>
+                        <li><a href="privacidade.html" class="text-dark text-decoration-none">Política de
+                                privacidade</a></li>
+                        <li><a href="termosgerais.html" class="text-dark text-decoration-none">Condições e Termos Gerais
+                                de Venda</a></li>
                         <li><a href="autor.html" class="text-dark text-decoration-none">Direitos de Autor</a></li>
-                        <li><a href="litigios.html" class="text-dark text-decoration-none">Resolução de Litígios Online</a></li>
-                        <li><a href="https://www.livroreclamacoes.pt/Inicio/" class="text-dark text-decoration-none" target="_blank" rel="noopener noreferrer">Livro de Reclamações</a></li>
+                        <li><a href="litigios.html" class="text-dark text-decoration-none">Resolução de Litígios
+                                Online</a></li>
+                        <li><a href="https://www.livroreclamacoes.pt/Inicio/" class="text-dark text-decoration-none"
+                                target="_blank" rel="noopener noreferrer">Livro de Reclamações</a></li>
                     </ul>
                 </div>
             </div>
@@ -75,7 +89,8 @@
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
