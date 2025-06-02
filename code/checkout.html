@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Finalizar Compra - ArmorDex</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/headerfooter.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar position-relative">
+        <div class="navbar-logo position-absolute start-0 ms-3 d-flex align-items-center">
+            <a href="index.html" class="d-flex align-items-center text-decoration-none">
+                <img src="../images/logo.png" alt="ArmorDex Logo"
+                    style="height: 40px; width: auto; margin-right: 10px;">
+                <span class="brand">ArmorDex</span>
+            </a>
+        </div>
+        <ul class="navtemp mx-auto">
+            <li><a class="about-us" href="products.html">Produtos</a></li>
+            <li><a class="about-us" href="aboutus.html">About us</a></li>
+            <li><a class="privacy" href="privacidade.html">Privacidade</a></li>
+        </ul>
+        <div class="position-absolute end-0 me-3">
+            <a href="cart.html" class="text-decoration-none text-dark">
+                🛒 <span class="fw-bold">Carrinho</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Checkout Form -->
+    <main class="container my-5">
+        <h1 class="mb-4">Finalizar Compra</h1>
+        <div class="row">
+            <!-- Billing/Shipping Info -->
+            <div class="col-md-7">
+                <h4 class="mb-3">Informações de Envio</h4>
+                <form class="needs-validation" id="checkoutForm" novalidate>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="firstName" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="João" required>
+                        </div>
+                        <div class="col">
+                            <label for="lastName" class="form-label">Apelido</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="Silva" required>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="address" class="form-label">Morada</label>
+                        <input type="text" class="form-control" id="address" placeholder="Rua Exemplo, 123" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email de contacto</label>
+                        <input type="email" class="form-control" id="email" placeholder="email@exemplo.com" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Telefone</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="912345678">
+                    </div>
+
+                    <h4 class="mt-5 mb-3">Pagamento</h4>
+                    <div class="mb-3">
+                        <label for="cc-name" class="form-label">Nome no Cartão</label>
+                        <input type="text" class="form-control" id="cc-name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="cc-number" class="form-label">Número do Cartão</label>
+                        <input type="text" class="form-control" id="cc-number" required>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="cc-expiration" class="form-label">Validade</label>
+                            <input type="text" class="form-control" id="cc-expiration" placeholder="MM/AA" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="cc-cvv" class="form-label">CVV</label>
+                            <input type="text" class="form-control" id="cc-cvv" required>
+                        </div>
+                    </div>
+
+                    <div class="form-check my-4">
+                        <input class="form-check-input" type="checkbox" value="" id="dataConsent" required>
+                        <label class="form-check-label" for="dataConsent">
+                            Autorizo o tratamento de dados pessoais para fins de compra e entrega.
+                        </label>
+                    </div>
+
+                </form>
+            </div>
+
+            <!-- Order Summary -->
+            <div class="col-md-5">
+                <h4 class="mb-3">Resumo da Encomenda</h4>
+                <ul class="list-group mb-3">
+                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                        <div>
+                            <h6 class="my-0">Card Binder - Preto</h6>
+                            <small class="text-muted">1 unidade</small>
+                        </div>
+                        <span class="text-muted">€23,99</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                        <div>
+                            <h6 class="my-0">Top Loaders (50 unidades)</h6>
+                            <small class="text-muted">2 unidades</small>
+                        </div>
+                        <span class="text-muted">€39,98</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                        <div>
+                            <h6 class="my-0">Proteção Cartas UV</h6>
+                            <small class="text-muted">1 unidade</small>
+                        </div>
+                        <span class="text-muted">€14,99</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <strong>Total</strong>
+                        <strong>€78,96</strong>
+                    </li>
+                </ul>
+
+                <a href="#popup" class="btn btn-primary w-100">Confirmar Encomenda</a>
+                <!-- Modal-like Popup without JS -->
+  <div id="popup">
+    <div class="popup-content">
+      <h5>Obrigado!</h5>
+      <p>O comprovativo e recibo foram enviados para o email.</p>
+      <a href="#" class="btn btn-secondary close-btn">Fechar</a>
+    </div>
+  </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center text-lg-start mt-5 border-top pt-3">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Informações Legais</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="cookies.html" class="text-dark">Política de cookies</a></li>
+                        <li><a href="privacidade.html" class="text-dark">Política de privacidade</a></li>
+                        <li><a href="termosgerais.html" class="text-dark">Termos e Condições</a></li>
+                        <li><a href="autor.html" class="text-dark">Direitos de Autor</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <h5 class="text-uppercase">Newsletter</h5>
+                    <form>
+                        <input type="text" class="form-control mb-2" placeholder="Seu nome">
+                        <input type="email" class="form-control mb-2" placeholder="Seu email">
+                        <button class="btn btn-success w-100">Subscrever</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3 bg-light">
+            © 2025 ArmorDex. Todos os direitos reservados.
+        </div>
+    </footer>
+</body>
+
+</html>
