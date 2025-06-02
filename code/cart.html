@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho - ArmorDex</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/product.css">
+    <link rel="stylesheet" href="../css/headerfooter.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar position-relative">
+        <div class="navbar-logo position-absolute start-0 ms-3 d-flex align-items-center">
+            <a href="index.html" class="d-flex align-items-center text-decoration-none">
+                <img src="../images/logo.png" alt="ArmorDex Logo"
+                    style="height: 40px; width: auto; margin-right: 10px;">
+                <span class="brand">ArmorDex</span>
+            </a>
+        </div>
+        <ul class="navtemp mx-auto">
+            <li><a class="about-us" href="products.html">Produtos</a></li>
+            <li><a class="about-us" href="aboutus.html">About us</a></li>
+            <li><a class="privacy" href="privacidade.html">Privacidade</a></li>
+        </ul>
+        <div class="position-absolute end-0 me-3">
+            <a href="cart.html" class="text-decoration-none text-dark">
+                🛒 <span class="fw-bold">Carrinho</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Cart Content -->
+    <main class="container mt-5">
+        <h1 class="title">O Seu Carrinho</h1>
+        <div class="table-responsive">
+            <table class="table align-middle">
+                <thead class="table-light">
+                    <tr>
+                        <th scope="col">Produto</th>
+                        <th scope="col">Preço Unitário</th>
+                        <th scope="col">Quantidade</th>
+                        <th scope="col">Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <img src="../images/binderNoText.png" alt="Binder" width="60" class="me-3">
+                                <div>
+                                    <strong>Card Binder - Cores Sólidas</strong>
+                                    <p class="mb-0 small text-muted">Cores: Preto</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td>€23,99</td>
+                        <td>1</td>
+                        <td>€23,99</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <img src="../images/blue&white.jpg" alt="Top Loaders" width="60" class="me-3">
+                                <div>
+                                    <strong>Top Loaders (50 unidades)</strong>
+                                    <p class="mb-0 small text-muted">Cor: Transparente</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td>€19,99</td>
+                        <td>2</td>
+                        <td>€39,98</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <img src="../images/gardi.png" alt="Proteção UV" width="60" class="me-3">
+                                <div>
+                                    <strong>Proteção Cartas UV</strong>
+                                    <p class="mb-0 small text-muted">1 Unidade</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td>€14,99</td>
+                        <td>1</td>
+                        <td>€14,99</td>
+                    </tr>
+                    <tr class="table-light">
+                        <td colspan="3" class="text-end fw-bold">Total</td>
+                        <td class="fw-bold">€78,96</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="text-end mt-4">
+            <a href="checkout.html" class="btn btn-success">Finalizar Compra</a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center text-lg-start mt-5 border-top pt-3">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Informações Legais</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="cookies.html" class="text-dark">Política de cookies</a></li>
+                        <li><a href="privacidade.html" class="text-dark">Política de privacidade</a></li>
+                        <li><a href="termosgerais.html" class="text-dark">Termos e Condições</a></li>
+                        <li><a href="autor.html" class="text-dark">Direitos de Autor</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <h5 class="text-uppercase">Newsletter</h5>
+                    <form>
+                        <input type="text" class="form-control mb-2" placeholder="Seu nome">
+                        <input type="email" class="form-control mb-2" placeholder="Seu email">
+                        <button class="btn btn-success w-100">Subscrever</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3 bg-light">
+            © 2025 ArmorDex. Todos os direitos reservados.
+        </div>
+    </footer>
+</body>
+
+</html>
